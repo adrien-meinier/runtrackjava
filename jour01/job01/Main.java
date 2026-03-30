@@ -18,3 +18,6 @@ public class Main {
         System.out.println("boolean: " + isTrue);
     }
 }
+//Pour int TOTO, stockez 3.817 puis affichez la valeur de TOTO. Que
+//constatez-vous ?
+//le code ne compile pas toto n'est pas un int 3.817 c'est un double pas un float
