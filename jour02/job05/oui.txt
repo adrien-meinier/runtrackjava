@@ -1,0 +1,35 @@
+class A { 
+    public A() {} 
+}
+
+class B extends A { 
+    public B() {
+        super();
+    }
+}
+
+class C extends B { 
+    public C() {
+        super();
+    }
+}
+
+class D extends A { 
+    protected int valeur = 1; 
+    public D() {} 
+    public D(int x) { 
+        valeur = x; 
+    }
+}
+
+class E extends D { 
+    public E() {
+        super();
+    }
+}
+
+class F extends D { 
+    public F() {
+        super();
+    }
+}   
