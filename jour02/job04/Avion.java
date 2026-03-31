@@ -29,6 +29,15 @@ public class Avion extends Vehicule {
     }
 
     @Override
+    // Cette annotation indique que la méthode qui suit 
+    // remplace (ou redéfinit) une méthode héritée de la classe parente.
+    // Avantages :
+    // 1. Le compilateur vérifie que la méthode existe bien dans la classe parente.
+    //    Cela évite les erreurs de frappe dans le nom ou la signature.
+    // 2. Clarifie le code pour les autres développeurs : ils savent que cette méthode
+    //    provient de l'héritage.
+    // 3. Permet d'appeler la méthode parent avec super.nomDeLaMéthode()
+    //    tout en ajoutant un comportement spécifique à la sous-classe.
     public void affiche() {
         super.affiche();
         System.out.println("Type de moteur : " + typeMoteur);
