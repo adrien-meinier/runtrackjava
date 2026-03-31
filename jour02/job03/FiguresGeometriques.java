@@ -1,12 +1,12 @@
-// Classe principale pour tester Rectangle
 public class FiguresGeometriques {
     public static void main(String[] args) {
         // Création d'un rectangle
-        Rectangle rect = new Rectangle(5.0, 10.0);
+        Rectangle rect = new Rectangle(0.0, 0.0, 5.0, 10.0);
 
         // Affichage des dimensions
         System.out.println("Largeur : " + rect.getLargeur());
         System.out.println("Longueur : " + rect.getLongueur());
+        rect.affiche(); // Affichage du centre
 
         // Affichage de la surface
         System.out.println("Surface : " + rect.surface());
