@@ -1,0 +1,31 @@
+class AbstarctFinal {
+    public static void main(string[] args) {
+        A[] tab = new A[3];
+        tab[0] = new A(); //A est une classe abstraite elle ne peut donc pas etre instancié
+        tab[1] = new B();
+        tab[2] = new C();
+        tab[1].b = 2; //tab est declaré comme A[] tab il est vu comme une objet de A, correction: ((B)tab[1]).b = 2;
+        ((C)tab[2]).c = 3; // dans la classe C final double c = 1, soit enlever final ou pas modifier c
+    }
+}
+
+Abstract class A {
+    int a;
+}
+class B extends A {
+    int b;
+}
+
+class C extends A {
+    final double c =1;
+}
+
+abstract class D extends A {
+    double d;
+    int operation(int a){
+        return (a*2);
+    }
+    abstract int calcul(int b) {  // vide rien deddans
+    }
+    abstract int machin();
+}
