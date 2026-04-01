@@ -1,0 +1,17 @@
+1.creer une classe abstraite character
+.attributs:nom, point de vie, attaque
+.methode abstraite attack(character target)
+.methode takeDamage(int dmg)
+.methode isAlive()
+
+2.cree au moins 2 classes qui heritent:
+.warior
+.mage
+
+3.chaque classe doit  implementer attack() differement
+
+4.creer une classe Main qui:
+.instancie 2 personnages
+.fait une boucle de combat (tour par tour)
+.affiche les actions dans la console
+.s'arrete quand un perso meurt
