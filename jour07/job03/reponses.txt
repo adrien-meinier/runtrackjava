@@ -1,0 +1,12 @@
+1. Expliquez pourquoi ce programme principal ne fait pas réellement ce
+qu’il veut.
+-"formes.add(new Forme(tabFormes[i]));"seul l'attribut couleur est conserver on perd le polymorphisme
+
+2. Qu’affiche-t-il ?
+une forme rouge
+une forme jaune
+
+3. Corrigez ce programme de sorte qu'il fasse ce que le programmeur
+voulait à l’origine. Vous donnerez le code Java de tout élément ajouté
+en précisant à quelle classe il appartient et indiquerez les éventuelles
+modifications à apporter à la méthode main.
