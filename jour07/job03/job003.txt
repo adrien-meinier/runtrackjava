@@ -1,0 +1,38 @@
+class Polymorph
+{
+    public static void main(String[] args)
+    {
+        Forme[] tabFormes =
+        {
+            new cercle("rouge"),
+            new Triangle("jaune")
+        };
+        
+        Collect formes = new Collect(10);
+        //Une collection de formes
+        //contenant une copie des objets definis
+        //dans le tableau tabFormes
+        for (int i = 0; i < tabFormes.length; ++i)
+             formes.add(new Forme(tabFormes[i]));
+        formes.dessine();
+    }     
+}
+
+class Forme
+{
+    private String couleur;
+
+    public Forme(String uneCouleur)
+    {
+        couleur = uneCouleur;
+    }
+
+    public Forme(Forme other)
+    {
+        this.couleur = other.couleur;
+    }
+
+    public void dessine() {
+        System.out.println("une forme " + couleur);
+    }
+}
