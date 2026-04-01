@@ -16,9 +16,13 @@ class C extends B {
 
 class D extends A { 
     protected int valeur = 1; 
-    public D() {} 
+
     public D(int x) { 
-        valeur = x; 
+        super()
+        d = x; 
+    }
+    public D() {
+        
     }
 }
 

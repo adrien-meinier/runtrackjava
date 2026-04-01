@@ -1,22 +1,22 @@
-class ABCDEF {
+/*class ABCDEF {
     public static void main(String[] args) {
         //indiquez si les affectation suivantes sont correctes:
-        A a = new A();
+        A a = new A(); 
         B b = new B();
         C c = new C();
         D d = new D();
         E e = new E();
         F f = new F();
 
-        a = b;
-        b = a;
-        a = (A) b;
-        a = null;
-        null = a ;
-        a = d;
-        b = d;
-        a = e;
-        d = e;
+        a = b; //ok
+       // b = a; //a est pas forcement un b
+        a = (A) b; //ok
+        a = null; //ok
+       // null = a; // on peut pas avec null
+        a = d; //ok
+        b = d; //
+        a = e; //ok
+        d = e; //ok
 
         //remplissage d'un tableau
         A[] as = new a [10];
@@ -34,10 +34,23 @@ class ABCDEF {
 
     }
     private static void rechercher(A[] as){
-        //a remplir
-    }
+    for (A a : as) {
+        if (a instanceof D) {
+            System.out.println("Objet de type D trouvé : " + a.getClass().getSimpleName());
+         }
+     }
+ }
 
-    private static void  addtionner(A[] as){
-        //a remplir
-    }
-}
+    private static void addtionner(A[] as){
+    int somme = 0;
+
+    for (A a : as) {
+        if (a instanceof D) {
+            somme += ((D) a).valeur;
+         }
+     }
+
+    System.out.println("Somme = " + somme);
+  }
+}*/
+
