@@ -1,7 +1,7 @@
 class Collect
 {
-        private Forme collect[];
-        private int index;
+    private Forme[] collect;
+    private int index;
 
     public Collect(int indexMax)
     {
@@ -11,9 +11,9 @@ class Collect
 
     public void add(Forme a)
     {
-        if (index < collect.length -1)
+        if (index < collect.length - 1)
         {
-            ++ index;
+            ++index;
             collect[index] = a;
         }   
     }

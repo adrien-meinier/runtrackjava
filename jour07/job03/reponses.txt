@@ -10,3 +10,30 @@ une forme jaune
 voulait à l’origine. Vous donnerez le code Java de tout élément ajouté
 en précisant à quelle classe il appartient et indiquerez les éventuelles
 modifications à apporter à la méthode main.
+
+Dans Forme:
+public Forme copie()
+{
+    return new Forme(this);
+}
+
+Dans Triangle:
+public Forme copie()
+{
+    return new Triangle(this);
+}
+
+Dans cercle :
+public Forme copie()
+{
+    return new Cercle(this);
+}
+
+Dans le main:
+formes.add(new Forme(tabFormes[i])); corriger par formes.add(tabFormes[i].copie());
+
+Resultat: 
+une forme rouge
+toute ronde
+une forme jaune
+toute pointue

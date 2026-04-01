@@ -12,7 +12,13 @@ class Forme
         this.couleur = other.couleur;
     }
 
-    public void dessine() {
+    public Forme copie()
+    {
+        return new Forme(this);
+    }
+
+    public void dessine()
+    {
         System.out.println("une forme " + couleur);
     }
 }

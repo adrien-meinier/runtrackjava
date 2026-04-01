@@ -5,14 +5,19 @@ class Triangle extends Forme
         super(uneCouleur);
     }
 
-    public Triangle(Triangle autreTriliangle)
+    public Triangle(Triangle autreTriangle)
     {
         super(autreTriangle);
     }
 
+    public Forme copie()
+    {
+        return new Triangle(this);
+    }
+
     public void dessine()
     {
-        super.dessine():
+        super.dessine();
         System.out.println("toute pointue");
     }
 }
